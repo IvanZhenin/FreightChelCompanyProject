@@ -1,0 +1,45 @@
+﻿<Page x:Class="FreightChelCompanyProject.PagesOfAdmin.AdminAddNewPickupPoint"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FreightChelCompanyProject.PagesOfAdmin"
+      mc:Ignorable="d" 
+      d:DesignHeight="794" d:DesignWidth="1490"
+      Title="AdminAddNewPickupPoint">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Background="CornflowerBlue" Grid.Row="0" Grid.RowSpan="2" CornerRadius="5"/>
+        <Viewbox Grid.Row="0">
+            <Border Height="50" Width="650" CornerRadius="5" BorderThickness="2" BorderBrush="WhiteSmoke"
+            Margin="5 5 5 0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock x:Name="textBlockPageStatus" Foreground="WhiteSmoke" FontSize="20" HorizontalAlignment="Center" Margin="5"/>
+            </Border>
+        </Viewbox>
+
+        <Viewbox Grid.Row="1" Margin="10">
+            <Border CornerRadius="5" Background="WhiteSmoke">
+                <Border Margin="70 20 70 20" CornerRadius="5" BorderThickness="2" BorderBrush="CornflowerBlue"
+                        VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="650" MinHeight="610">
+                    <StackPanel Orientation="Vertical" Margin="5" VerticalAlignment="Center">
+                        <GroupBox Header="Адрес" Height="125" Width="400" BorderBrush="CornflowerBlue" 
+                                  BorderThickness="2" Margin="5" FontFamily="Arial" FontSize="16">
+                            <TextBox x:Name="inputAddressName" Margin="5" FontSize="16" Padding="5" MaxLength="50" 
+                                     Height="75" TextWrapping="Wrap" VerticalContentAlignment="Top"/>
+                        </GroupBox>
+
+                        <StackPanel Orientation="Horizontal" Margin="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Button Content="Сохранить" Margin="5" Style="{StaticResource ButtonStandard}" FontFamily="Arial"
+                                    FontSize="18" Height="40" Width="160" Click="ButtonSaveClick"/>
+                            <Button Content="Отменить" Margin="5" Style="{StaticResource ButtonStandard}" FontFamily="Arial"
+                                    FontSize="18" Height="40" Width="160" Click="ButtonBackClick"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Border>
+        </Viewbox>
+    </Grid>
+</Page>

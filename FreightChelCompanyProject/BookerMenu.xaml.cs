@@ -1,0 +1,67 @@
+﻿using FreightChelCompanyProject.AppData;
+using FreightChelCompanyProject.PagesOfBooker;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace FreightChelCompanyProject
+{
+    /// <summary>
+    /// Главное рабочее окно бухгалтера.
+    /// </summary>
+    public partial class BookerMenu : Window
+    {
+        public BookerMenu()
+        {
+            InitializeComponent();
+            FrameSector.BookerFrame = bookerTargetFrame;
+            FrameSector.BookerAssistFrame = bookerAssistFrame;
+            textUserPosition.Text = "Бухгалтер " + LoginSector.Name + " | Уникальный номер [" + LoginSector.UserId + "]";
+            buttonAssistUp.Visibility = Visibility.Collapsed;
+
+            FrameSector.BookerAssistFrame.Navigate(new BookerOrdersListPage());
+            FrameSector.BookerFrame.Navigate(new BookerReportsPage());
+        }
+
+        private void ButtonLogoutClick(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
+
+        private void ButtonAssistClick(object sender, RoutedEventArgs e)
+        {
+            if (buttonAssistUp.Visibility == Visibility.Collapsed)
+            {
+                buttonAssistUp.Visibility = Visibility.Visible;
+                buttonAssistBack.Visibility = Visibility.Collapsed;
+                assistColumn.MaxWidth = 0;
+            }
+            else
+            {
+                buttonAssistUp.Visibility = Visibility.Collapsed;
+                buttonAssistBack.Visibility = Visibility.Visible;
+                assistColumn.MaxWidth = 650;
+            }
+        }
+
+        private void ButtonRebootClick(object sender, RoutedEventArgs e)
+        {
+            FreightChelCompanyEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+            BookerMenu bookerMenu = new BookerMenu();
+            bookerMenu.Show();
+            this.Close();
+        }
+    }
+}

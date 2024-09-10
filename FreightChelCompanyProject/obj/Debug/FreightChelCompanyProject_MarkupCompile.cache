@@ -1,0 +1,20 @@
+﻿FreightChelCompanyProject
+
+
+winexe
+C#
+.cs
+D:\Program Files (x86)\Cpp Projects\FreightChelCompanyProject\FreightChelCompanyProject\obj\Debug\
+FreightChelCompanyProject
+none
+false
+DEBUG;TRACE
+D:\Program Files (x86)\Cpp Projects\FreightChelCompanyProject\FreightChelCompanyProject\App.xaml
+33574786893
+2-1436026467
+53-1810802630
+18-290659703
+AdminMenu.xaml;BookerMenu.xaml;DispatcherMenu.xaml;MainWindow.xaml;ManagerMenu.xaml;PagesOfAdmin\AdminAddNewCategory.xaml;PagesOfAdmin\AdminAddNewClient.xaml;PagesOfAdmin\AdminAddNewPickupPoint.xaml;PagesOfAdmin\AdminAddNewProduct.xaml;PagesOfAdmin\AdminAddNewWorker.xaml;PagesOfAdmin\AdminCheckOrderStatsPage.xaml;PagesOfAdmin\AdminCheckProdsInRequestPage.xaml;PagesOfAdmin\AdminEditBookerReport.xaml;PagesOfAdmin\AdminEditDispatcherRequest.xaml;PagesOfAdmin\AdminEditManagerOrder.xaml;PagesOfAdmin\AdminMainPage.xaml;PagesOfAdmin\AdminOrdersReportsPage.xaml;PagesOfAdmin\AdminPickupPointsPage.xaml;PagesOfAdmin\AdminProductsCategoriesPage.xaml;PagesOfAdmin\AdminWorkersClientsPage.xaml;PagesOfBooker\BookerAddNewReport.xaml;PagesOfBooker\BookerOrdersListPage.xaml;PagesOfBooker\BookerReportsPage.xaml;PagesOfBooker\BookerTargetOrderInfo.xaml;PagesOfDispatcher\DispatcherAddNewProductInRequest.xaml;PagesOfDispatcher\DispatcherAddNewRequest.xaml;PagesOfDispatcher\DispatcherAssistPage.xaml;PagesOfDispatcher\DispatcherProductsInRequestPage.xaml;PagesOfDispatcher\DispatcherRequestsPage.xaml;PagesOfManager\ManagerAddNewOrder.xaml;PagesOfManager\ManagerOrdersPage.xaml;PagesOfManager\ManagerRequestsPage.xaml;PagesOfManager\ManagerTargetRequestInfo.xaml;
+
+False
+
